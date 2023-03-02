@@ -87,15 +87,16 @@ function draw() {
 //Mude o gameState (estado do jogo) para End
 gameState = END;
 //destrua todos os grupos
-createCash.setVelocityYEach(0);
-            createDiamonds.setDestroyEach();
-            createJwellery.setDestroyEach();
-            createSword.setDestroyEach();
-// defina setvelocityEach como 0 para todos os grupos
-createCash.setVelocityYEach(0);
-createDiamonds.setVelocitYEach(0);
-createJwellery.setVelocityYEach(0);
-createSword.setVelocityYEach(0);
+cashG.destroyEach();
+        diamondsG.destroyEach();
+        jwelleryG.destroyEach();
+        swordGroup.destroyEach();
+        
+        cashG.setVelocityYEach(0);
+        diamondsG.setVelocityYEach(0);
+        jwelleryG.setVelocityYEach(0);
+        swordGroup.setVelocityYEach(0);
+     
 }
 
   }
